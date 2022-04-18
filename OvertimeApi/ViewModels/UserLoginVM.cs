@@ -1,6 +1,6 @@
 ﻿namespace OvertimeApi.ViewModels
 {
-    public class UserVM
+    public class UserLoginVM
     {
         public string UserName { get; set; }
 

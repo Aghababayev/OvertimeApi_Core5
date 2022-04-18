@@ -21,7 +21,6 @@ D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Microsoft.IdentityModel.
 D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -58,3 +57,4 @@ D:\C# projects\OvertimeApi\OvertimeApi\obj\Debug\net5.0\refint\OvertimeApi.dll
 D:\C# projects\OvertimeApi\OvertimeApi\obj\Debug\net5.0\OvertimeApi.pdb
 D:\C# projects\OvertimeApi\OvertimeApi\obj\Debug\net5.0\OvertimeApi.genruntimeconfig.cache
 D:\C# projects\OvertimeApi\OvertimeApi\obj\Debug\net5.0\ref\OvertimeApi.dll
+D:\C# projects\OvertimeApi\OvertimeApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
