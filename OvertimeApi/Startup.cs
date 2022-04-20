@@ -15,6 +15,7 @@ using OvertimeApi.DataAceess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,12 +36,12 @@ namespace OvertimeApi
             string connadress = _configuration.GetConnectionString("MyCon");
             services.AddDbContext<Context>(options => options.UseSqlServer(connadress));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
+    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
-            ValidateAudience = true,
+            ValidateIssuer = false,
+            ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
             ValidIssuer = _configuration["Jwt:Issuer"],
@@ -48,6 +49,8 @@ namespace OvertimeApi
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]))
         };
     });
+        ;
+            services.AddMvc();  
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -66,10 +69,12 @@ namespace OvertimeApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "OvertimeApi v1"));
             }
 
-            app.UseHttpsRedirection();
+          //  app.UseHttpsRedirection();
+           app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseAuthentication ();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
