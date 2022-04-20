@@ -57,7 +57,7 @@ namespace OvertimeApi.Controllers
                     new Claim(ClaimTypes.Name, user.UserName),
                     new Claim(ClaimTypes.Role, user.UserRole)
                 }),
-                Expires = DateTime.UtcNow.AddHours(1),
+                Expires = DateTime.UtcNow.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenhandler.CreateToken(tokenDescriptor);

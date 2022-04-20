@@ -65,7 +65,7 @@ namespace OvertimeApi.Controllers
             return Ok();
 
         }
-        [HttpGet("{id}")]
+        [HttpGet("get/{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -125,11 +125,11 @@ namespace OvertimeApi.Controllers
 
         }
         [HttpGet("days")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin, User")]
         public async Task<IActionResult> Getdays()
         {
             var value = await _context.Overtimes.CountAsync();
-            string message = "Your overtime days is: " + value;
+            string message = "Succesfull  request"; 
             _logger.LogInformation(message);
             return Ok(message);
         }
