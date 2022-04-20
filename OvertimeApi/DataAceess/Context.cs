@@ -9,6 +9,7 @@ namespace OvertimeApi.DataAceess
         {
         }
 
-        public  DbSet<Overtime> Overtimes { get; set; }    
+        public  DbSet<Overtime> Overtimes { get; set; }   
+        public  DbSet<User> Users { get; set; }    
     }
 }

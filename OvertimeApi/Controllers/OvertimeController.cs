@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -17,7 +18,7 @@ namespace OvertimeApi.Controllers
     public class OvertimeController : ControllerBase
     {
 
-
+        
         public OvertimeController(Context context, ILogger<OvertimeController> logger)
         {
             _context = context;  //_______________Data Access Entity (Dependency Injection) 
@@ -25,10 +26,13 @@ namespace OvertimeApi.Controllers
         }
         private Context _context { get; set; }
         private ILogger _logger { get; set; }
-
+       
         [HttpGet("all")]
+      [Authorize(Roles ="User,Admin")]
         public async Task<IActionResult> GetALL()
         {
+     
+           
             try
             {
                 var values = await _context.Overtimes.OrderBy(x => x.DateTime).ToListAsync();
@@ -44,8 +48,9 @@ namespace OvertimeApi.Controllers
             }
 
         }
-
         [HttpPost("create")]
+        [Authorize(Roles = "Admin")]
+      
         public async Task<IActionResult> Add(OvertimePostVM overtimeVM)
         {
             var overtime = new Overtime()
@@ -60,7 +65,8 @@ namespace OvertimeApi.Controllers
             return Ok();
 
         }
-        [HttpGet("{id}")]
+        [HttpGet("get/{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetById(int id)
         {
             var val = await _context.Overtimes.FindAsync(id);
@@ -78,6 +84,7 @@ namespace OvertimeApi.Controllers
 
 
         [HttpPut("edit")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(Overtime p)
 
         {
@@ -96,7 +103,8 @@ namespace OvertimeApi.Controllers
                 return Ok();
             }
         }
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var value = await _context.FindAsync<Overtime>(id);
@@ -117,10 +125,11 @@ namespace OvertimeApi.Controllers
 
         }
         [HttpGet("days")]
+        [Authorize(Roles = "Admin, User")]
         public async Task<IActionResult> Getdays()
         {
             var value = await _context.Overtimes.CountAsync();
-            string message = "Your overtime days is: " + value;
+            string message = "Succesfull  request"; 
             _logger.LogInformation(message);
             return Ok(message);
         }
