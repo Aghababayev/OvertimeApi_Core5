@@ -50,7 +50,7 @@ namespace Overtime_Core_WEB
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Overtime}/{action=Index}/{id?}");
             });
         }
     }

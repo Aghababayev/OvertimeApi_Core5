@@ -1,18 +1,39 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
-<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+﻿@using Overtime_Core_WEB.OvertimeDto
+@model List<Ovr>
+<div class="container-fluid">
+    <table id="tbl1" class="table table-striped" style="margin-top:20px">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Delete</th>
+                   <th>Update</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
 
-<table class="table table-bordered">
-    <thead>
-        <tr>Description</tr>
-        <tr>Date</tr>
-        <tr>Update</tr>
-        <tr>Delete</tr>
-        
-            
-        
-    </thead>
-</table>
+            <tr>
+                 <td>@item.Description</td>
+                <td>@item.DateTime</td>
+                <td><a style="width:100%" href="/Overtime/Delete/@item.İD" class="btn btn-danger">Delete</a></td>
+                <td><a style="width:100%" href="/Overtime/Update/@item.İD" class="btn btn-warning">Update</a></td>
+            </tr>
+        }
 
+
+
+
+    </table>
+</div>
+
+<a href="/Overtime/Add" class="btn btn-info">Add</a>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+<script>
+    $('#tbl1').dataTable();
+</script>

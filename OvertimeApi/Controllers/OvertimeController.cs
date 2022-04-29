@@ -28,7 +28,7 @@ namespace OvertimeApi.Controllers
         private ILogger _logger { get; set; }
        
         [HttpGet("all")]
-      [Authorize(Roles ="User,Admin")]
+      //[Authorize(Roles ="User,Admin")]
         public async Task<IActionResult> GetALL()
         {
      
@@ -49,7 +49,7 @@ namespace OvertimeApi.Controllers
 
         }
         [HttpPost("create")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
       
         public async Task<IActionResult> Add(OvertimePostVM overtimeVM)
         {
@@ -66,7 +66,7 @@ namespace OvertimeApi.Controllers
 
         }
         [HttpGet("get/{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetById(int id)
         {
             var val = await _context.Overtimes.FindAsync(id);
@@ -84,7 +84,7 @@ namespace OvertimeApi.Controllers
 
 
         [HttpPut("edit")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(Overtime p)
 
         {
@@ -104,7 +104,7 @@ namespace OvertimeApi.Controllers
             }
         }
         [HttpDelete("delete/{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var value = await _context.FindAsync<Overtime>(id);
@@ -125,7 +125,7 @@ namespace OvertimeApi.Controllers
 
         }
         [HttpGet("days")]
-        [Authorize(Roles = "Admin, User")]
+        //[Authorize(Roles = "Admin, User")]
         public async Task<IActionResult> Getdays()
         {
             var value = await _context.Overtimes.CountAsync();

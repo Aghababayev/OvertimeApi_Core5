@@ -1,0 +1,38 @@
+﻿
+@{
+
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+<div class="container-fluid ">
+    <style>
+        label {
+            text-transform: uppercase
+        }
+        select {
+            text-transform: capitalize
+        }
+        h3 {
+            color: red
+        }
+    </style>
+
+
+    <form class="form-group " method="post">
+
+        <input type="hidden"  />
+        <label>Description</label>
+        <br />
+        
+        <textarea class="form-control col-4"></textarea> 
+        <br />
+        <label>Date</label>
+        <input type="date" class="form-control col-4"/> 
+        <br />
+        <button class="  btn  btn-success">ADD</button>
+        <a style="margin-left:1%" href="/Overtime/Index" class="btn btn-info">BACK</a>
+    </form>
+</div>

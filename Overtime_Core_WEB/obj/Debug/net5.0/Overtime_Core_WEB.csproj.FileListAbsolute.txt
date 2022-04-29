@@ -165,3 +165,5 @@ D:\C# projects\OvertimeApi\Overtime_Core_WEB\obj\Debug\net5.0\Overtime_Core_WEB.
 D:\C# projects\OvertimeApi\Overtime_Core_WEB\obj\Debug\net5.0\Overtime_Core_WEB.genruntimeconfig.cache
 D:\C# projects\OvertimeApi\Overtime_Core_WEB\obj\Debug\net5.0\ref\Overtime_Core_WEB.dll
 D:\C# projects\OvertimeApi\Overtime_Core_WEB\obj\Debug\net5.0\Razor\Views\Overtime\Index.cshtml.g.cs
+D:\C# projects\OvertimeApi\Overtime_Core_WEB\bin\Debug\net5.0\libman.json
+D:\C# projects\OvertimeApi\Overtime_Core_WEB\obj\Debug\net5.0\Razor\Views\Overtime\Add.cshtml.g.cs
