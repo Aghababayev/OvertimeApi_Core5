@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OvertimeApi", "OvertimeApi\OvertimeApi.csproj", "{9B14E943-0DCF-4449-A3ED-8B97C82B11ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OvertimeApi", "OvertimeApi\OvertimeApi.csproj", "{9B14E943-0DCF-4449-A3ED-8B97C82B11ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overtime_Core_WEB", "Overtime_Core_WEB\Overtime_Core_WEB.csproj", "{2779AAA7-0708-4F8D-8069-553F58FD2768}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9B14E943-0DCF-4449-A3ED-8B97C82B11ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B14E943-0DCF-4449-A3ED-8B97C82B11ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B14E943-0DCF-4449-A3ED-8B97C82B11ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2779AAA7-0708-4F8D-8069-553F58FD2768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2779AAA7-0708-4F8D-8069-553F58FD2768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2779AAA7-0708-4F8D-8069-553F58FD2768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2779AAA7-0708-4F8D-8069-553F58FD2768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
