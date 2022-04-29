@@ -129,7 +129,7 @@ namespace OvertimeApi.Controllers
         public async Task<IActionResult> Getdays()
         {
             var value = await _context.Overtimes.CountAsync();
-            string message = "Succesfull  request"; 
+            string message = "Your overtime days: " + value;
             _logger.LogInformation(message);
             return Ok(message);
         }
