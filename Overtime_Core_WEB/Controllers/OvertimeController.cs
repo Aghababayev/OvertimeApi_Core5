@@ -7,11 +7,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Overtime_Core_WEB.Controllers
 {
-    public partial class OvertimeController : Controller
+    public  class OvertimeController : Controller
     {
 
         public async Task<IActionResult> Index()
@@ -30,6 +31,20 @@ namespace Overtime_Core_WEB.Controllers
      
         public IActionResult Add()
         {
+            return View();
+        } 
+        [HttpPost]
+     
+        public async Task<IActionResult> Add(Ovr p)
+        {
+            var httpclient= new HttpClient();   
+            var jsonstring= JsonConvert.SerializeObject(p);
+            var stringcontent=new StringContent(jsonstring,Encoding.UTF8,"application/json");
+            var responsemessage = await httpclient.PostAsync("https://localhost:44352/api/Overtime/create" , stringcontent);
+            if (responsemessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
             return View();
         }
 
