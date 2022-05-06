@@ -1,0 +1,43 @@
+﻿@model Ovr
+
+<div class="container-fluid ">
+
+
+
+
+    <style>
+        label {
+            text-transform: uppercase
+        }
+        select {
+            text-transform: capitalize
+        }
+        h3 {
+            color: red
+        }
+    </style>
+
+
+
+
+    <form asp-controller="Overtime" asp-action="Edit" class="form-group " method="post">
+
+        <input type="text" class="form-control col-1" asp-for="İD" />
+        <br />
+        <label>Description</label>
+        <br />
+     
+        <textarea rows=5   class="form-control col-4" asp-for="Description"></textarea>
+        <br />
+        <label>Date</label>
+        <input type="date" class="form-control col-2" asp-for="DateTime"/>
+        <br />
+      
+        <button class="btn btn-success">Update</button>
+          <a href="/Overtime/Index" class="btn btn-info">Back</a>        
+
+
+
+    </form>
+
+</div>

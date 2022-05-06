@@ -1,8 +1,8 @@
-﻿@using Overtime_Core_WEB.OvertimeDto
+﻿
 @model List<Ovr>
 <div class="container-fluid">
  <h1>Your overtime days: <span style="color:green">@ViewBag.CountOvertimes</span></h1> 
-    <table id="tbl1" class="table table-striped" style="margin-top:20px">
+    <table id="tbl1" class="table table-hover" style="margin-top:20px">
         <thead>
             <tr>
                 <th>Description</th>
@@ -18,13 +18,9 @@
                  <td>@item.Description</td>
                 <td>@item.DateTime.ToShortDateString()</td>
                 <td><a style="width:100%" href="/Overtime/Delete/@item.İD" class="btn btn-danger">Delete</a></td>
-                <td><a style="width:100%" href="/Overtime/Update/@item.İD" class="btn btn-warning">Update</a></td>
+                <td><a style="width:100%" href="/Overtime/Edit/@item.İD" class="btn btn-warning">Update</a></td>
             </tr>
         }
-
-
-
-
     </table>
 </div>
 

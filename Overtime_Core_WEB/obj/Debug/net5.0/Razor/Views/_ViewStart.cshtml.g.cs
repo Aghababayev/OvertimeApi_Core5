@@ -33,8 +33,15 @@ using Overtime_Core_WEB.Controllers;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "D:\C# projects\OvertimeApi\Overtime_Core_WEB\Views\_ViewImports.cshtml"
+using Overtime_Core_WEB.OvertimeDto;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f52c24d1698ebc947d884122ae9d6ffbb34c489a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e22c2a33c47c8c628f2b4e9184be49dd20319efa", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

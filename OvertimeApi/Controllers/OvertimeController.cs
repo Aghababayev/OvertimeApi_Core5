@@ -28,7 +28,7 @@ namespace OvertimeApi.Controllers
         private ILogger _logger { get; set; }
        
         [HttpGet("all")]
-      //[Authorize(Roles ="User,Admin")]
+        //[Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> GetALL()
         {
      
