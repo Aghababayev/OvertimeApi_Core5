@@ -9364,7 +9364,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\naghababayev\\.nuget\\packages\\": {}
+    "C:\\Users\\naghababayev.ASM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -9372,11 +9372,11 @@
       "projectUniqueName": "D:\\C# projects\\OvertimeApi\\Overtime_Core_WEB\\Overtime_Core_WEB.csproj",
       "projectName": "Overtime_Core_WEB",
       "projectPath": "D:\\C# projects\\OvertimeApi\\Overtime_Core_WEB\\Overtime_Core_WEB.csproj",
-      "packagesPath": "C:\\Users\\naghababayev\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\naghababayev.ASM\\.nuget\\packages\\",
       "outputPath": "D:\\C# projects\\OvertimeApi\\Overtime_Core_WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\naghababayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\naghababayev.ASM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
