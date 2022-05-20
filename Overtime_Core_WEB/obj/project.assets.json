@@ -9369,11 +9369,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# projects\\OvertimeApi\\Overtime_Core_WEB\\Overtime_Core_WEB.csproj",
+      "projectUniqueName": "D:\\C# projects\\OvertimeApi_MVC\\Overtime_Core_WEB\\Overtime_Core_WEB.csproj",
       "projectName": "Overtime_Core_WEB",
-      "projectPath": "D:\\C# projects\\OvertimeApi\\Overtime_Core_WEB\\Overtime_Core_WEB.csproj",
+      "projectPath": "D:\\C# projects\\OvertimeApi_MVC\\Overtime_Core_WEB\\Overtime_Core_WEB.csproj",
       "packagesPath": "C:\\Users\\naghababayev.ASM\\.nuget\\packages\\",
-      "outputPath": "D:\\C# projects\\OvertimeApi\\Overtime_Core_WEB\\obj\\",
+      "outputPath": "D:\\C# projects\\OvertimeApi_MVC\\Overtime_Core_WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\naghababayev.ASM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9390,8 +9390,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\C# projects\\OvertimeApi\\OvertimeApi\\OvertimeApi.csproj": {
-              "projectPath": "D:\\C# projects\\OvertimeApi\\OvertimeApi\\OvertimeApi.csproj"
+            "D:\\C# projects\\OvertimeApi_MVC\\OvertimeApi\\OvertimeApi.csproj": {
+              "projectPath": "D:\\C# projects\\OvertimeApi_MVC\\OvertimeApi\\OvertimeApi.csproj"
             }
           }
         }
